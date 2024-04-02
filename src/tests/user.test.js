@@ -51,7 +51,7 @@ test('PUT/ users/:id debe retornar el elemento modificado por su id', async () =
 test('POST / users/login debe dar credenciales incorecta un error', async () => {
     const body = {
         email: "isaac@gmail.com", 
-        password: "hola1234"
+        password: "isaac1234"
     }
     const res = await request(app).post('/users/login').send(body)
     expect(res.status).toBe(401);
